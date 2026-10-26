@@ -21,11 +21,18 @@ jobs:
   deploy:
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           ref: main
+
+      - name: Copy intelligence data into website
+        run: |
+          cp data/activities.json web/activities.json
+          cp data/source_status.json web/source_status.json
+          cp sources.json web/sources.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
