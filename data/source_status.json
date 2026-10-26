@@ -1,37 +1,51 @@
 {
-  "last_run": "2026-10-26T03:59:59.457574+00:00",
+  "last_run": "2026-10-26T04:26:10.099387+00:00",
   "sources": [
     {
       "source": "emirates",
       "state": "ok",
-      "found": 2,
-      "new": 2
+      "found": 3,
+      "new": 1,
+      "updated": 2
     },
     {
       "source": "etihad",
       "state": "failed",
-      "error": "HTTPSConnectionPool(host='www.etihad.com', port=443): Read timed out. (read timeout=20)"
+      "error": "HTTPSConnectionPool(host='www.etihad.com', port=443): Read timed out. (read timeout=18)"
     },
     {
-      "source": "dubai_media",
-      "state": "disabled / needs collector review"
-    },
-    {
-      "source": "qatar",
-      "state": "disabled / needs collector review"
-    },
-    {
-      "source": "abu_dhabi",
-      "state": "disabled / needs collector review"
-    },
-    {
-      "source": "turkiye",
-      "state": "disabled / needs collector review"
+      "source": "dubai_det",
+      "state": "failed",
+      "error": "403 Client Error: Forbidden for url: https://www.dubaidet.gov.ae/en/newsroom"
     },
     {
       "source": "jordan",
-      "state": "disabled / needs collector review"
+      "state": "no verified articles / review required",
+      "found": 0,
+      "new": 0,
+      "updated": 0
+    },
+    {
+      "source": "turkiye",
+      "state": "failed",
+      "error": "403 Client Error: Forbidden for url: https://goturkiye.com/branding/press-releases"
+    },
+    {
+      "source": "qatar",
+      "state": "disabled / pending compatibility check"
+    },
+    {
+      "source": "abu_dhabi",
+      "state": "disabled / pending compatibility check"
+    },
+    {
+      "source": "yas_island",
+      "state": "disabled / pending compatibility check"
+    },
+    {
+      "source": "egypt",
+      "state": "disabled / pending compatibility check"
     }
   ],
-  "total_saved": 2
+  "total_saved": 3
 }
