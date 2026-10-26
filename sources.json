@@ -1,9 +1,11 @@
 [
-  {"id":"emirates","name":"Emirates Media Centre","competitor":"Emirates","kind":"airline","url":"https://www.emirates.com/media-centre/","domain":"emirates.com","enabled":true,"tier":1},
-  {"id":"etihad","name":"Etihad Newsroom","competitor":"Etihad Airways","kind":"airline","url":"https://www.etihad.com/en-us/news","domain":"etihad.com","enabled":true,"tier":1},
-  {"id":"dubai_media","name":"Dubai Media Office","competitor":"Dubai","kind":"destination","url":"https://www.mediaoffice.ae/en","domain":"mediaoffice.ae","enabled":false,"tier":1},
+  {"id":"emirates","name":"Emirates Media Centre","competitor":"Emirates","kind":"airline","url":"https://www.emirates.com/media-centre/","domain":"emirates.com","article_path":"/media-centre/[^/]+$","enabled":true,"max_articles":10,"tier":1},
+  {"id":"etihad","name":"Etihad Newsroom","competitor":"Etihad Airways","kind":"airline","url":"https://www.etihad.com/en-us/news","domain":"etihad.com","article_path":"/news/","enabled":true,"max_articles":8,"tier":1},
+  {"id":"dubai_det","name":"Dubai Department of Economy and Tourism","competitor":"Dubai","kind":"destination","url":"https://www.dubaidet.gov.ae/en/newsroom","domain":"dubaidet.gov.ae","article_path":"/newsroom/|/press-releases/|/news-and-insights/","enabled":true,"max_articles":12,"tier":1},
+  {"id":"jordan","name":"Jordan Tourism Board Media Center","competitor":"Jordan","kind":"destination","url":"https://international.visitjordan.com/mediacenter/","domain":"visitjordan.com","article_path":"/media|/news","enabled":true,"max_articles":10,"tier":1},
+  {"id":"turkiye","name":"GoTürkiye Press Releases","competitor":"Türkiye","kind":"destination","url":"https://goturkiye.com/branding/press-releases","domain":"goturkiye.com","article_path":"/branding/|/press|/blog|/news","enabled":true,"max_articles":12,"tier":1},
   {"id":"qatar","name":"Visit Qatar Media & Press","competitor":"Qatar","kind":"destination","url":"https://visitqatar.com/intl-en/media-press","domain":"visitqatar.com","enabled":false,"tier":1},
   {"id":"abu_dhabi","name":"DCT Abu Dhabi","competitor":"Abu Dhabi","kind":"destination","url":"https://dct.gov.ae/en/media.centre/news/strategy.aspx","domain":"dct.gov.ae","enabled":false,"tier":1},
-  {"id":"turkiye","name":"GoTürkiye Press Releases","competitor":"Türkiye","kind":"destination","url":"https://goturkiye.com/branding/press-releases","domain":"goturkiye.com","enabled":false,"tier":1},
-  {"id":"jordan","name":"Jordan Tourism Board","competitor":"Jordan","kind":"destination","url":"https://international.visitjordan.com/mediacenter/","domain":"visitjordan.com","enabled":false,"tier":1}
+  {"id":"yas_island","name":"Yas Island / Miral newsroom","competitor":"Yas Island","kind":"destination","url":"https://www.yasisland.com/","domain":"yasisland.com","enabled":false,"tier":1},
+  {"id":"egypt","name":"Egypt Tourism Authority (verification pending)","competitor":"Egypt","kind":"destination","url":"https://www.experienceegypt.eg/","domain":"experienceegypt.eg","enabled":false,"tier":1}
 ]

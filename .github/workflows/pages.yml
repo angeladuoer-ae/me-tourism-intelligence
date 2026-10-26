@@ -1,5 +1,4 @@
 name: Deploy dashboard to GitHub Pages
-
 on:
   push:
     branches: [main]
@@ -7,41 +6,30 @@ on:
   workflow_run:
     workflows: ["Update public intelligence"]
     types: [completed]
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: pages
   cancel-in-progress: true
-
 jobs:
   deploy:
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Copy intelligence data into website
+      - uses: actions/checkout@v4
+      - name: Build static bundle
         run: |
-          cp data/activities.json web/activities.json
-          cp data/source_status.json web/source_status.json
-          cp sources.json web/sources.json
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload static site
-        uses: actions/upload-pages-artifact@v3
+          mkdir -p _site
+          cp web/* _site/
+          cp data/activities.json data/source_status.json sources.json _site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: web
-
-      - name: Deploy to GitHub Pages
-        id: deployment
+          path: _site
+      - id: deployment
         uses: actions/deploy-pages@v4
