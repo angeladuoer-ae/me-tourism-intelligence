@@ -28,7 +28,7 @@ jobs:
 
       - run: python scripts/collect.py
 
-      - run: pytest -q
+      - run: python -m pytest -q
 
       - name: Commit updated data
         run: |
