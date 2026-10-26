@@ -1,0 +1,9 @@
+[
+  {"id":"emirates","name":"Emirates Media Centre","competitor":"Emirates","kind":"airline","url":"https://www.emirates.com/media-centre/","domain":"emirates.com","enabled":true,"tier":1},
+  {"id":"etihad","name":"Etihad Newsroom","competitor":"Etihad Airways","kind":"airline","url":"https://www.etihad.com/en-us/news","domain":"etihad.com","enabled":true,"tier":1},
+  {"id":"dubai_media","name":"Dubai Media Office","competitor":"Dubai","kind":"destination","url":"https://www.mediaoffice.ae/en","domain":"mediaoffice.ae","enabled":false,"tier":1},
+  {"id":"qatar","name":"Visit Qatar Media & Press","competitor":"Qatar","kind":"destination","url":"https://visitqatar.com/intl-en/media-press","domain":"visitqatar.com","enabled":false,"tier":1},
+  {"id":"abu_dhabi","name":"DCT Abu Dhabi","competitor":"Abu Dhabi","kind":"destination","url":"https://dct.gov.ae/en/media.centre/news/strategy.aspx","domain":"dct.gov.ae","enabled":false,"tier":1},
+  {"id":"turkiye","name":"GoTürkiye Press Releases","competitor":"Türkiye","kind":"destination","url":"https://goturkiye.com/branding/press-releases","domain":"goturkiye.com","enabled":false,"tier":1},
+  {"id":"jordan","name":"Jordan Tourism Board","competitor":"Jordan","kind":"destination","url":"https://international.visitjordan.com/mediacenter/","domain":"visitjordan.com","enabled":false,"tier":1}
+]
