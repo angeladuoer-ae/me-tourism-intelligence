@@ -1,12 +1,12 @@
 {
-  "last_run": "2026-11-11T10:49:26.364166+00:00",
+  "last_run": "2026-11-12T10:58:35.812618+00:00",
   "sources": [
     {
       "source": "emirates",
       "state": "ok",
-      "found": 4,
+      "found": 3,
       "new": 1,
-      "updated": 1
+      "updated": 0
     },
     {
       "source": "etihad",
@@ -47,5 +47,5 @@
       "state": "disabled / pending compatibility check"
     }
   ],
-  "total_saved": 25
+  "total_saved": 26
 }
