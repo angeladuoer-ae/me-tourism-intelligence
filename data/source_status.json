@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-11-16T11:04:20.303201+00:00",
+  "last_run": "2026-11-17T11:44:33.738821+00:00",
   "sources": [
     {
       "source": "emirates",
@@ -47,5 +47,5 @@
       "state": "disabled / pending compatibility check"
     }
   ],
-  "total_saved": 27
+  "total_saved": 28
 }
